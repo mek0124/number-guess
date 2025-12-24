@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'main_window.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.9.2
+## Created by: Qt User Interface Compiler version 6.10.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -24,7 +24,7 @@ class Ui_w_MainWindow(object):
     def setupUi(self, w_MainWindow):
         if not w_MainWindow.objectName():
             w_MainWindow.setObjectName(u"w_MainWindow")
-        w_MainWindow.resize(500, 600)
+        w_MainWindow.resize(500, 300)
         font = QFont()
         font.setPointSize(12)
         w_MainWindow.setFont(font)
