@@ -1,4 +1,44 @@
+# Python cache
 __pycache__/
-__init__.py
-number_guess.egg-info
-dist
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Setuptools and distribution
+number_guess.egg-info/
+*.egg
+*.egg-info/
+dist/
+build/
+
+# PyInstaller
+*.spec
+*.manifest
+*.app
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# PySide6 cache (if any)
+*.pyc
