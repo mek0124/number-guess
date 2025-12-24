@@ -1,12 +1,19 @@
 #!/bin/bash
 
-rm -rf dist
-rm -rf number_guess.egg-info
+# Clean previous builds
+rm -rf build/
+rm -rf dist/
+rm -f NumberGuess.spec
 
-clear
+# Build the executable
+pyinstaller --onefile \
+    --windowed \
+    --name "NumberGuess" \
+    --add-data "main_window.ui:." \
+    --hidden-import PySide6.QtCore \
+    --hidden-import PySide6.QtGui \
+    --hidden-import PySide6.QtWidgets \
+    --clean \
+    main.py
 
-python3 -m build
-
-clear
-
-bash run.sh
+echo "Build complete! Executable is in the 'dist' folder."
